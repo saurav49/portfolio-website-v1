@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+  background-color: #2563eb;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem 3.5rem;
+  margin-bottom: 3rem;
+  box-shadow: 0px 3px 6px 4px rgba(48, 8, 226, 0.2);
+  color: #f3f4f6;
+  border-bottom-left-radius: 20px;
+}
+
+ul li a {
+  position: relative;
+  transition: all 1s;
+  color: #f3f4f6;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+}
+
+li {
+  margin: 0px 15px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+ul li a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #aaa;
+  height: 3px;
+  border-radius: 5px;
+}
+
+a {
+  text-decoration: none;
+}
+ul li a:hover::after {
+  width: 100%;
+}
+
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  /* background-color: #9ca3af; */
+}
+
+.hero-image {
+  max-width: 50%;
+  display: block;
+  margin: auto;
+}
+
+.description h2 {
+  margin: 2rem;
+  letter-spacing: 2px;
+  font-size: 2.3rem;
+  color: #6b7280;
+}
+.description span {
+  color: #2563eb;
+  font-style: italic;
+}
+
+.subcontainer {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  text-align: start;
+}
+
+.blue {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.subcontainer div {
+  padding: 0.5rem;
+}
+
+button {
+  padding: 0.6rem;
+  margin: 13px 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #2563eb;
+  font-size: 1rem;
+  cursor: pointer;
+  color: #f3f4f6;
+}
+
+.transparen-btn {
+  background-color: white;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  align-items: center;
+  background-color: #2563eb;
+  box-shadow: 0px 3px 6px 4px rgba(48, 8, 226, 0.2);
+  color: #f3f4f6;
+  border-top-right-radius: 20px;
+}
+
+footer div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 10px 0;
+}
+
+footer > p {
+  font-size: 1rem;
+}
+
+.title {
+  text-align: center;
+  margin: 5rem;
+  letter-spacing: 2px;
+  color: #9ca3af;
+}
+
+.title > h1 > span {
+  color: #2563eb;
+  font-style: italic;
+}
+
+.projectSection {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15%;
+  justify-content: space-between;
+  height: 40vh;
+  margin-bottom: 50px;
+}
+
+.btn {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+}
+
+.blank {
+  background: none;
+  border: 1px solid #2563eb;
+  color: #2563eb;
+}
+
+.title span {
+  color: #2563eb;
+  font-style: italic;
+}
+
+.blog {
+  display: flex;
+  flex-direction: column;
+  padding: 0 15%;
+  justify-content: space-between;
+  height: 40vh;
+  margin-bottom: 50px;
+}
+
+.blog > button {
+  width: 120px;
+}
