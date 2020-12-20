@@ -101,6 +101,19 @@ ul li a:hover::after {
   padding: 0.5rem;
 }
 
+a {
+  color: white;
+}
+a:visited {
+  color: white;
+}
+a:hover {
+  color: white;
+}
+a:active {
+  color: white;
+}
+
 button {
   padding: 0.6rem;
   margin: 13px 0;
@@ -116,6 +129,19 @@ button {
   background-color: white;
   color: #2563eb;
   border: 2px solid #2563eb;
+}
+
+.transparen-btn > a {
+  color: #2563eb;
+}
+.transparen-btn > a:visited {
+  color: #2563eb;
+}
+.transparen-btn > a:hover {
+  color: #2563eb;
+}
+.transparen-btn > a:active {
+  color: #2563eb;
 }
 
 footer {
