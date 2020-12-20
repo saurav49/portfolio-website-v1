@@ -235,4 +235,12 @@ footer > p {
     width: 120px;
     height: 40px;
   }
+
+  .blogs {
+    padding: 15%;
+  }
+
+  #blog {
+    font-size: 0.7rem;
+  }
 }
