@@ -187,6 +187,10 @@ footer > p {
   margin-bottom: 50px;
 }
 
+.projectSection > div > div {
+  margin: 5px 0;
+}
+
 .btn {
   display: flex;
   flex-direction: column;
@@ -215,4 +219,20 @@ footer > p {
 
 .blog > button {
   width: 120px;
+}
+
+@media screen and (max-width: 550px) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .projectSection {
+    font-size: 0.82rem;
+    padding: 11%;
+  }
+
+  button {
+    width: 120px;
+    height: 40px;
+  }
 }
