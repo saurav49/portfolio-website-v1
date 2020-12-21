@@ -7,6 +7,85 @@
   font-family: "Poppins", sans-serif;
 }
 
+.preloader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background-color: #7fc3e7;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.5s ease;
+}
+
+.finish-preloader {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.cloud1,
+.cloud2,
+.cloud3 {
+  height: 100px;
+  position: absolute;
+  right: 0;
+  z-index: -1;
+}
+
+.cloud1 {
+  top: 25%;
+  transform: translate(100%, -25%);
+  animation: clouds 3s ease infinite;
+}
+.cloud2 {
+  top: 50%;
+  transform: translate(100%, -50%);
+  animation: clouds 3s ease 1.5s infinite;
+}
+.cloud3 {
+  top: 75%;
+  transform: translate(100%, -75%);
+  animation: clouds 3s ease 5s infinite;
+}
+
+.airplane {
+  height: 200px;
+  animation: airplane 1s ease infinite alternate;
+}
+
+.preloader > h3 {
+  color: white;
+  font-size: 1.3rem;
+  position: absolute;
+  top: 75%;
+  transform: translateY(-75%);
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 5px;
+}
+
+@keyframes airplane {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(50px);
+  }
+}
+
+@keyframes clouds {
+  from {
+    right: 0%;
+  }
+  to {
+    right: 130%;
+  }
+}
+
+main {
+  display: none;
+}
+
 .navbar {
   background-color: #2563eb;
   display: flex;
@@ -81,6 +160,32 @@ ul li a:hover::after {
 .description span {
   color: #2563eb;
   font-style: italic;
+}
+
+.typing {
+  position: relative;
+  margin-left: 10px;
+}
+
+.typing::after {
+  position: absolute;
+  content: "";
+  width: 5px;
+  height: 100%;
+  top: 0;
+  right: -2px;
+  transform: skew(-15deg);
+  background-color: rgb(66, 62, 62);
+  animation: blink 0.5s ease infinite alternate;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .subcontainer {
