@@ -1,217 +1,469 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Projects</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="icon" href="./assets/images/PicsArt_11-13-08.55.58.PNG" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <div class="preloader">
-        <img class="airplane" src="./preloader/airplane.png" alt="airplane">
-        <h3>Landing on the website...</h3>
-        <img class="cloud1" src="./preloader/cloud.png" alt="cloud1">
-        <img class="cloud2" src="./preloader/cloud.png" alt="cloud2">
-        <img class="cloud3" src="./preloader/cloud.png" alt="cloud3">
+      <img class="airplane" src="./preloader/airplane.png" alt="airplane" />
+      <h3>Landing on the website...</h3>
+      <img class="cloud1" src="./preloader/cloud.png" alt="cloud1" />
+      <img class="cloud2" src="./preloader/cloud.png" alt="cloud2" />
+      <img class="cloud3" src="./preloader/cloud.png" alt="cloud3" />
     </div>
-    <div class="navbar">
-        <div>
-            <h1>Saurav Biswas</h1>
-        </div>
-        <div>
-            <ul>
-                <li> <a href="./index.html">Home</a> </li>
-                <li><a href="./projects.html">Projects</a></li>
-                <li><a href="./Blogs.html">Blogs</a></li>
+
+    <div class="container">
+      <div class="subcontainer">
+        <nav class="navbar">
+            <a href="/">
+                <h1 class="brand-name">
+                  <span class="brand-name-color">Saurav</span> Biswas
+                </h1>
+              </a>
+
+          <ul class="nav-list">
+            <li class="nav-items">
+              <a class="nav-item-link" href="/">Home</a>
+            </li>
+
+            <li class="nav-items">
+              <a class="nav-item-link" href="./projects.html">Projects</a>
+            </li>
+
+            <li class="nav-items">
+              <a class="nav-item-link" href="./skills.html">Skills</a>
+            </li>
+
+            <li class="nav-items">
+              <a class="nav-item-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+          <button class="nav-btn">
+            <img src="./assets/icons/icons8-menu.svg" alt="hamburger-icon" />
+          </button>
+
+          <div class="sidebar">
+            <i class="fas fa-times"></i>
+            <ul class="nav-list-sidebar">
+              <li class="nav-items-sidebar">
+                <a href="/">Home</a>
+              </li>
+
+              <li class="nav-items-sidebar">
+                <a href="./projects.html">Projects</a>
+              </li>
+
+              <li class="nav-items-sidebar">
+                <a href="./skills.html">Skills</a>
+              </li>
+
+              <li class="nav-items-sidebar">
+                <a href="/contact">Contact</a>
+              </li>
             </ul>
+          </div>
+        </nav>
+
+        <div class="project-header">
+            <h1>My Projects</h1>
+            <p>Real <i class="fas fa-globe"></i> world applications I have used my skillset to design and build <i class="fas fa-wrench"></i></p>
+        </div>
+
+        <div class="projet-wrapper">
+            <div class="project-container">
+                <div class="project-desc">
+                    <h2>Project Name</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis architecto odio itaque sit ipsum cupiditate laudantium inventore ratione dolore ipsam!</p>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skill-wrapper">
+                            <div class="skill-capsule">
+                                <p>Node</p>
+                            </div>
+                            <div class="skill-capsule">
+                                <p>Express Js</p>
+                            </div>
+                            <div class="skill-capsule">
+                                <p>React</p>
+                            </div>
+                            <div class="skill-capsule">
+                                <p>MongoDB</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-btn">
+                        <button class="btn btn-color"><i class="fas fa-code"></i>View Code</button>
+                        <button class="btn btn-color-outline"><i class="far fa-eye"></i>Live Demo</button>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="./assets/images/undraw_programming_2svr.svg" alt="project1">
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="project-desc">
+                    <h2>Project Name</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis architecto odio itaque sit ipsum cupiditate laudantium inventore ratione dolore ipsam!</p>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skill-wrapper">
+                            <div class="skill-capsule">
+                                <p>Node</p>
+                            </div>
+                            <div class="skill-capsule">
+                                <p>Express Js</p>
+                            </div>
+                            <div class="skill-capsule">
+                                <p>React</p>
+                            </div>
+                            <div class="skill-capsule">
+                                <p>MongoDB</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-btn">
+                        <button class="btn btn-color"><i class="fas fa-code"></i>View Code</button>
+                        <button class="btn btn-color-outline"><i class="far fa-eye"></i>Live Demo</button>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="./assets/images/undraw_programming_2svr.svg" alt="project1">
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="project-desc">
+                    <h2>Project Name</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis architecto odio itaque sit ipsum cupiditate laudantium inventore ratione dolore ipsam!</p>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skill-wrapper">
+                            <div class="skill-capsule">
+                                <p>Node</p>
+                            </div>
+                            <div class="skill-capsule">
+                                <p>Express Js</p>
+                            </div>
+                            <div class="skill-capsule">
+                                <p>React</p>
+                            </div>
+                            <div class="skill-capsule">
+                                <p>MongoDB</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-btn">
+                        <button class="btn btn-color"><i class="fas fa-code"></i>View Code</button>
+                        <button class="btn btn-color-outline"><i class="far fa-eye"></i>Live Demo</button>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="./assets/images/undraw_programming_2svr.svg" alt="project1">
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="project-desc">
+                    <h2>Project Name</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis architecto odio itaque sit ipsum cupiditate laudantium inventore ratione dolore ipsam!</p>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skill-wrapper">
+                            <div class="skill-capsule">
+                                <p>Node</p>
+                            </div>
+                            <div class="skill-capsule">
+                                <p>Express Js</p>
+                            </div>
+                            <div class="skill-capsule">
+                                <p>React</p>
+                            </div>
+                            <div class="skill-capsule">
+                                <p>MongoDB</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-btn">
+                        <button class="btn btn-color"><i class="fas fa-code"></i>View Code</button>
+                        <button class="btn btn-color-outline"><i class="far fa-eye"></i>Live Demo</button>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="./assets/images/undraw_programming_2svr.svg" alt="project1">
+                </div>
+            </div>
+
+            <div class="project-container">
+                <div class="project-desc">
+                    <h2>Project Name</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis architecto odio itaque sit ipsum cupiditate laudantium inventore ratione dolore ipsam!</p>
+                    <div class="skills">
+                        <h3>Skills</h3>
+                        <div class="skill-wrapper">
+                            <div class="skill-capsule">
+                                <p>Node</p>
+                            </div>
+                            <div class="skill-capsule">
+                                <p>Express Js</p>
+                            </div>
+                            <div class="skill-capsule">
+                                <p>React</p>
+                            </div>
+                            <div class="skill-capsule">
+                                <p>MongoDB</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="projects-btn">
+                        <button class="btn btn-color"><i class="fas fa-code"></i>View Code</button>
+                        <button class="btn btn-color-outline"><i class="far fa-eye"></i>Live Demo</button>
+                    </div>
+                </div>
+                <div class="project-image">
+                    <img src="./assets/images/undraw_programming_2svr.svg" alt="project1">
+                </div>
+            </div>
+        </div>
+
+      </div>
+      <footer>
+        <div class="copyright-msg">
+          <p>© 2021 Saurav Biswas. All rights reserved.</p>
+        </div>
+        <div class="socials-icons">
+          <ul>
+            <li>
+              <a href="/"> <img src="/assets/icons/linkedin.svg" alt="" /> </a>
+            </li>
+            <li>
+              <a href="/"> <img src="/assets/icons/github.svg" alt="" /> </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+
+<!-- <div class="navbar">
+    <div>
+      <h1>Saurav Biswas</h1>
+    </div>
+    <div>
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./projects.html">Projects</a></li>
+        <li><a href="./Blogs.html">Blogs</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <footer>
+    <div>
+      <h2>Get In Touch!</h2>
+    </div>
+    <div>
+      <ul>
+        <li>
+          <a href="https://github.com/saurav49">GitHub</a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/saurav-biswas-0865b2171/"
+            >Linkedin</a
+          >
+        </li>
+        <li>
+          <a href="https://twitter.com/home">Twitter</a>
+        </li>
+      </ul>
+    </div>
+    <div>
+      <span>Made With ❤️ By Saurav Biswas</span>
+    </div> -->
+  </footer>
+
+<!-- <div class="title">
+    <h1> see my <span> code </span> <h1></h1>
+</div>
+
+<div class="projectSection">
+    <div>
+        <div>
+            <h2>REST Countries</h2>
+        </div>
+        <div>
+            <p>January, 2021</p>
+            <p>Integrated with the REST Countries API to pull country data and display it, you can search for any country, filter country by regions, pagination is included 
+               (Note : The project is still currently in works)
+            </p>
+        </div>
+        <div class="btn">
+            <button id="jbtn"><a href="https://vf9wy.csb.app/!#">Live Project</a></button>
+            <a href="https://codesandbox.io/s/rest-countries-vf9wy"><button class="blank">View Source</button></a>
         </div>
     </div>
-    <div class="title">
-        <h1> see my <span> code </span> <h1></h1>
+</div>
+
+<div class="projectSection">
+    <div>
+        <div>
+            <h2>Cash Register</h2>
+        </div>
+        <div>
+            <p>January, 2021</p>
+            <p> You don't need to take out your calculator if you have cash register app, quickly find out how much 
+            you have to pay back to your customer. Powered By ReactJS 
+            </p>
+        </div>
+        <div class="btn">
+            <button id="jbtn"><a href="https://i8p41.csb.app/">Live Project</a></button>
+            <a href="https://codesandbox.io/s/cash-regsiter-i8p41"><button class="blank">View Source</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="projectSection">
+    <div>
+        <div>
+            <h2>Recipie App</h2>
+        </div>
+        <div>
+            <p>January, 2021</p>
+            <p>A Recipie App made by using ReactJS. It fetch data from recipie API, you can search for any dish check for the calorie of it and their ingredients and quantity required</p>
+        </div>
+        <div class="btn">
+            <button id="jbtn"><a href="https://0yehi.csb.app/">Live Project</a></button>
+            <a href="https://codesandbox.io/s/food-recipie-app-0yehi?file=/src/App.js"><button class="blank">View Source</button></a>
+        </div>
+    </div>
+</div>
+
+
+<div class="projectSection">
+    <div>
+        <div>
+            <h2>Chuck Norris Joke Generator</h2>
+        </div>
+        <div>
+            <p>January, 2021</p>
+            <p>Collection of all chuck norris, you can filter the joke by their category, chuck norris jokes are just a click away now!</p>
+        </div>
+        <div class="btn">
+            <button id="jbtn"><a href="https://mf3ut.csb.app/">Live Project</a></button>
+            <a href="https://codesandbox.io/s/jokesgenerator-mf3ut"><button class="blank">View Source</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="projectSection">
+    <div>
+        <div>
+            <h2>Musify</h2>
+        </div>
+        <div>
+            <p>December, 2020</p>
+            <p> Do you love listening to Music? You would find some good recommendations for all the genre. Made using ReactJS with love</p>
+        </div>
+        <div class="btn">
+            <button id="jbtn"><a href="https://0td21.csb.app/">Live Project</a></button>
+            <a href="https://github.com/saurav49/Musify-Music_Recomendation_App"><button class="blank">View Source</button></a>
+        </div>
+    </div>
+</div>
+
+<div class="projectSection">
+    <div>
+        <div>
+            <h2>EmojiMania</h2>
+        </div>
+        <div>
+            <p>December, 2020</p>
+            <p> A library of Emoji with meaning</p>
+        </div>
+        <div class="btn">
+            <button id="jbtn"><a href="https://1trl9.csb.app/">Live Project</a></button>
+            <a href="https://github.com/saurav49/EmojiMania-Emoji-interpretor"><button class="blank">View Source</button></a>
+        </div>
+    </div>
+</div>
+<div class="projectSection">
+    <div>
+        <div>
+            <h2>Donal Speak</h2>
+        </div>
+        <div>
+            <p>December, 2020</p>
+            <p>If you are a fan of Donal Duck, try this Donal translator and have fun!</p>
+        </div>
+        <div class="btn">
+            <button><a href="https://donal-speak.netlify.app">Live Project</a></button>
+            <a href="https://github.com/saurav49/Dolan-Translator"><button class="blank">View Source</button></a>
+        </div>
+    </div>
+</div>
+<div class="projectSection">
+    <div>
+        <div>
+            <h2>Banana Speak</h2>
+        </div>
+        <div>
+            <p>December, 2020</p>
+            <p> If you are a fan of minions and want to speak like them. Use this translator to convert english text to minion speak or should we say banana speak</p>
+        </div>
+        <div class="btn">
+            <button><a href="https://speak-banana-to-me.netlify.app">Live Project</a></button>
+            <a href="https://github.com/saurav49/banana-talk-neogcamp"><button class="blank">View Source</button></a>
+        </div>
+    </div>
+</div>
+<div class="projectSection">
+    <div>
+        <div>
+            <h2>You think you know me</h2>
+        </div>
+        <div>
+            <p>December, 2020</p>
+            <p>A CLI app built with nodeJS. You can send this to your friends and find out who really knows you</p>
+        </div>
+        <div class="btn">
+            <button><a href="https://repl.it/@saurav49/uknome#index.js">Live Project</a></button>
+            <a href="https://github.com/saurav49/uknome-"><button class="blank">View Source</button></a>
+        </div> 
     </div>
     
-    <div class="projectSection">
-        <div>
-            <div>
-                <h2>REST Countries</h2>
-            </div>
-            <div>
-                <p>January, 2021</p>
-                <p>Integrated with the REST Countries API to pull country data and display it, you can search for any country, filter country by regions, pagination is included 
-                   (Note : The project is still currently in works)
-                </p>
-            </div>
-            <div class="btn">
-                <button id="jbtn"><a href="https://vf9wy.csb.app/!#">Live Project</a></button>
-                <a href="https://codesandbox.io/s/rest-countries-vf9wy"><button class="blank">View Source</button></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="projectSection">
-        <div>
-            <div>
-                <h2>Cash Register</h2>
-            </div>
-            <div>
-                <p>January, 2021</p>
-                <p> You don't need to take out your calculator if you have cash register app, quickly find out how much 
-                you have to pay back to your customer. Powered By ReactJS 
-                </p>
-            </div>
-            <div class="btn">
-                <button id="jbtn"><a href="https://i8p41.csb.app/">Live Project</a></button>
-                <a href="https://codesandbox.io/s/cash-regsiter-i8p41"><button class="blank">View Source</button></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="projectSection">
-        <div>
-            <div>
-                <h2>Recipie App</h2>
-            </div>
-            <div>
-                <p>January, 2021</p>
-                <p>A Recipie App made by using ReactJS. It fetch data from recipie API, you can search for any dish check for the calorie of it and their ingredients and quantity required</p>
-            </div>
-            <div class="btn">
-                <button id="jbtn"><a href="https://0yehi.csb.app/">Live Project</a></button>
-                <a href="https://codesandbox.io/s/food-recipie-app-0yehi?file=/src/App.js"><button class="blank">View Source</button></a>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="projectSection">
-        <div>
-            <div>
-                <h2>Chuck Norris Joke Generator</h2>
-            </div>
-            <div>
-                <p>January, 2021</p>
-                <p>Collection of all chuck norris, you can filter the joke by their category, chuck norris jokes are just a click away now!</p>
-            </div>
-            <div class="btn">
-                <button id="jbtn"><a href="https://mf3ut.csb.app/">Live Project</a></button>
-                <a href="https://codesandbox.io/s/jokesgenerator-mf3ut"><button class="blank">View Source</button></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="projectSection">
-        <div>
-            <div>
-                <h2>Musify</h2>
-            </div>
-            <div>
-                <p>December, 2020</p>
-                <p> Do you love listening to Music? You would find some good recommendations for all the genre. Made using ReactJS with love</p>
-            </div>
-            <div class="btn">
-                <button id="jbtn"><a href="https://0td21.csb.app/">Live Project</a></button>
-                <a href="https://github.com/saurav49/Musify-Music_Recomendation_App"><button class="blank">View Source</button></a>
-            </div>
-        </div>
-    </div>
-
-    <div class="projectSection">
-        <div>
-            <div>
-                <h2>EmojiMania</h2>
-            </div>
-            <div>
-                <p>December, 2020</p>
-                <p> A library of Emoji with meaning</p>
-            </div>
-            <div class="btn">
-                <button id="jbtn"><a href="https://1trl9.csb.app/">Live Project</a></button>
-                <a href="https://github.com/saurav49/EmojiMania-Emoji-interpretor"><button class="blank">View Source</button></a>
-            </div>
-        </div>
-    </div>
-    <div class="projectSection">
-        <div>
-            <div>
-                <h2>Donal Speak</h2>
-            </div>
-            <div>
-                <p>December, 2020</p>
-                <p>If you are a fan of Donal Duck, try this Donal translator and have fun!</p>
-            </div>
-            <div class="btn">
-                <button><a href="https://donal-speak.netlify.app">Live Project</a></button>
-                <a href="https://github.com/saurav49/Dolan-Translator"><button class="blank">View Source</button></a>
-            </div>
-        </div>
-    </div>
-    <div class="projectSection">
-        <div>
-            <div>
-                <h2>Banana Speak</h2>
-            </div>
-            <div>
-                <p>December, 2020</p>
-                <p> If you are a fan of minions and want to speak like them. Use this translator to convert english text to minion speak or should we say banana speak</p>
-            </div>
-            <div class="btn">
-                <button><a href="https://speak-banana-to-me.netlify.app">Live Project</a></button>
-                <a href="https://github.com/saurav49/banana-talk-neogcamp"><button class="blank">View Source</button></a>
-            </div>
-        </div>
-    </div>
-    <div class="projectSection">
-        <div>
-            <div>
-                <h2>You think you know me</h2>
-            </div>
-            <div>
-                <p>December, 2020</p>
-                <p>A CLI app built with nodeJS. You can send this to your friends and find out who really knows you</p>
-            </div>
-            <div class="btn">
-                <button><a href="https://repl.it/@saurav49/uknome#index.js">Live Project</a></button>
-                <a href="https://github.com/saurav49/uknome-"><button class="blank">View Source</button></a>
-            </div> 
-        </div>
-        
-    </div>
-    <div class="projectSection">
-        <div>
-            <div>
-                <h2>Silicon Valley Quiz</h2>
-            </div>
-            <div>
-                <p>December, 2020</p>
-                <p>How well do you know Silicon Valley the series, play this quiz and find out</p>
-            </div>
-            <div class="btn">
-                <button><a href="https://repl.it/@saurav49/SiliconValleyTrivia">Live Project</a></button>
-                <a href="https://github.com/saurav49/SiliconValleyTrivia-CLI-"><button class="blank">View Source</button></a>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div>
-            <h2>Get In Touch!</h2>
-        </div>
-        <div>
-            <ul>
-                <li>
-                    <a href="https://github.com/saurav49">GitHub</a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/saurav-biswas-0865b2171/">Linkedin</a>
-                </li>
-                <li>
-                    <a href="https://twitter.com/home">Twitter</a>
-                </li>
-            </ul>
-        </div>
+</div>
+<div class="projectSection">
     <div>
-        <span>Made With ❤️ By Saurav Biswas</span>
+        <div>
+            <h2>Silicon Valley Quiz</h2>
+        </div>
+        <div>
+            <p>December, 2020</p>
+            <p>How well do you know Silicon Valley the series, play this quiz and find out</p>
+        </div>
+        <div class="btn">
+            <button><a href="https://repl.it/@saurav49/SiliconValleyTrivia">Live Project</a></button>
+            <a href="https://github.com/saurav49/SiliconValleyTrivia-CLI-"><button class="blank">View Source</button></a>
+        </div>
     </div>
-</footer>
-<script src="app.js"></script>
-</body>
-</html>
+</div> -->

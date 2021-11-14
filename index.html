@@ -1,92 +1,201 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Saurav Biswas</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="icon" href="./assets/images/PicsArt_11-13-08.55.58.PNG" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
     <div class="preloader">
-        <img class="airplane" src="./preloader/airplane.png" alt="airplane">
-        <h3>Landing on the website...</h3>
-        <img class="cloud1" src="./preloader/cloud.png" alt="cloud1">
-        <img class="cloud2" src="./preloader/cloud.png" alt="cloud2">
-        <img class="cloud3" src="./preloader/cloud.png" alt="cloud3">
+      <img class="airplane" src="./preloader/airplane.png" alt="airplane" />
+      <h3>Landing on the website...</h3>
+      <img class="cloud1" src="./preloader/cloud.png" alt="cloud1" />
+      <img class="cloud2" src="./preloader/cloud.png" alt="cloud2" />
+      <img class="cloud3" src="./preloader/cloud.png" alt="cloud3" />
     </div>
-    <main>
-        <div class="container">
-            <div class="navbar">
-                <div>
-                    <h1>Saurav Biswas</h1>
-                </div>
-                <div>
-                    <ul>
-                        <li> <a href="#">Home</a> </li>
-                        <li><a href="./projects.html">Projects</a></li>
-                        <li><a href="./Blogs.html">Blogs</a></li>
-                    </ul>
-                </div>
-            </div>
+
+    <div class="container">
+      <div class="subcontainer-extra">
+        <nav class="navbar">
+          <a href="/">
+            <h1 class="brand-name">
+              <span class="brand-name-color">Saurav</span> Biswas
+            </h1>
+          </a>
+
+          <ul class="nav-list">
+            <li class="nav-items">
+              <a class="nav-item-link" href="/">Home</a>
+            </li>
+
+            <li class="nav-items">
+              <a class="nav-item-link" href="./projects.html">Projects</a>
+            </li>
+
+            <li class="nav-items">
+              <a class="nav-item-link" href="./skills.html">Skills</a>
+            </li>
+
+            <li class="nav-items">
+              <a class="nav-item-link" href="/contact">Contact</a>
+            </li>
+          </ul>
+          <button class="nav-btn">
+            <img src="./assets/icons/icons8-menu.svg" alt="hamburger-icon" />
+          </button>
+
+          <div class="sidebar">
+            <i class="fas fa-times"></i>
+            <ul class="nav-list-sidebar">
+              <li class="nav-items-sidebar">
+                <a href="/">Home</a>
+              </li>
+
+              <li class="nav-items-sidebar">
+                <a href="./projects.html">Projects</a>
+              </li>
+
+              <li class="nav-items-sidebar">
+                <a href="./skills.html">Skills</a>
+              </li>
+
+              <li class="nav-items-sidebar">
+                <a href="/contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <div class="hero">
+          <div class="hero-desc">
+            <h2>Full Stack Developer</h2>
+            <p>
+              I'm a full stack web developer with a proficiency in the MERN
+              stack who loves building attractive and effective web
+              applications. Hit the button below to see my projects.
+            </p>
+
+            <a class="go-to-project-btn" href="./projects.html">
+              <button class="btn btn-color">
+                <!-- <img
+                  class="btn-image"
+                  src="./assets/icons/code.svg"
+                  alt="arrow"
+                /> -->
+                <i class="fas fa-code"></i>
+                See My Work
+              </button>
+            </a>
+          </div>
+
+          <div class="hero-image">
+            <img
+              src="./assets/images/undraw_programming_2svr.svg"
+              alt="programming"
+            />
+          </div>
         </div>
-        <div class="description">
-            <div>
-                <img class="hero-image" src="./assets/undraw_web_developer_p3e5.svg" alt="hero">
-            </div>
-            <div>
-                <h2>Saurav Biswas The <span class="typing">Web Developer</span> </h2>
-            </div>
+      </div>
+      <footer>
+        <div class="copyright-msg">
+          <p>© 2021 Saurav Biswas. All rights reserved.</p>
         </div>
-        <div class="container">
-            <div class="subcontainer blue">
-                <div>
-                    <h2>Skills</h2>
-                </div>
-                <div>
-                    <p>Iam familiar with HTML5, CSS3, JavaScript, NodeJS, ReactJS, Python, Git and Web Hosting</p>
-                </div>
-            </div>
-            <div class="subcontainer">
-                <div>
-                    <h2>Projects</h2>
-                </div>
-                <div>
-                    <p>I like to showcase my work and thus, you can see my projects hosted online</p>
-                    <a href="./projects.html"><button>See Projects</button></a>
-                </div>
-            </div>
-            <div class="subcontainer blue">
-                <div>
-                    <h2>Blogs</h2>
-                </div>
-                <div>
-                    <p>Iam also working on some technical and non-technical blogs. I like to document my journey of learning</p>
-                    <a href="./Blogs.html"><button class="transparen-btn"> See Blogs</button></a>
-                </div>
-            </div>
+        <div class="socials-icons">
+          <ul>
+            <li>
+              <a href="/"> <img src="/assets/icons/linkedin.svg" alt="" /> </a>
+            </li>
+            <li>
+              <a href="/"> <img src="/assets/icons/github.svg" alt="" /> </a>
+            </li>
+          </ul>
         </div>
-        <footer>
+      </footer>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
+
+<!-- <main>
+    <div class="container">
+        <div class="navbar">
             <div>
-                <h2>Get In Touch!</h2>
+                <h1>Saurav Biswas</h1>
             </div>
             <div>
                 <ul>
-                    <li>
-                        <a href="https://github.com/saurav49">GitHub</a>
-                    </li>
-                    <li>
-                        <a href="https://www.linkedin.com/in/saurav-biswas-0865b2171/">Linkedin</a>
-                    </li>
-                    <li>
-                        <a href="https://twitter.com/Saurav82381890">Twitter</a>
-                    </li>
+                    <li> <a href="#">Home</a> </li>
+                    <li><a href="./projects.html">Projects</a></li>
+                    <li><a href="./Blogs.html">Blogs</a></li>
                 </ul>
             </div>
-        <div>
-            <span>Made With ❤️ By Saurav Biswas</span>
         </div>
-    </footer>
-    </main>
-    <script src="app.js"></script>
-</body>
-</html>
+    </div>
+    <div class="description">
+        <div>
+            <img class="hero-image" src="./assets/undraw_web_developer_p3e5.svg" alt="hero">
+        </div>
+        <div>
+            <h2>Saurav Biswas The <span class="typing">Web Developer</span> </h2>
+        </div>
+    </div>
+    <div class="container">
+        <div class="subcontainer blue">
+            <div>
+                <h2>Skills</h2>
+            </div>
+            <div>
+                <p>Iam familiar with HTML5, CSS3, JavaScript, NodeJS, ReactJS, Python, Git and Web Hosting</p>
+            </div>
+        </div>
+        <div class="subcontainer">
+            <div>
+                <h2>Projects</h2>
+            </div>
+            <div>
+                <p>I like to showcase my work and thus, you can see my projects hosted online</p>
+                <a href="./projects.html"><button>See Projects</button></a>
+            </div>
+        </div>
+        <div class="subcontainer blue">
+            <div>
+                <h2>Blogs</h2>
+            </div>
+            <div>
+                <p>Iam also working on some technical and non-technical blogs. I like to document my journey of learning</p>
+                <a href="./Blogs.html"><button class="transparen-btn"> See Blogs</button></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <h2>Get In Touch!</h2>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <a href="https://github.com/saurav49">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/saurav-biswas-0865b2171/">Linkedin</a>
+                </li>
+                <li>
+                    <a href="https://twitter.com/Saurav82381890">Twitter</a>
+                </li>
+            </ul>
+        </div>
+    <div>
+        <span>Made With ❤️ By Saurav Biswas</span>
+    </div>
+</footer>
+</main> -->
