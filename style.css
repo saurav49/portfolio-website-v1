@@ -161,8 +161,7 @@ a {
 }
 
 .sidebar {
-  background-color: #353935;
-  color: #fff;
+  background-color: rgba(53, 57, 53);
   height: 100%;
   width: 0px;
   position: fixed;
@@ -310,8 +309,24 @@ footer {
   list-style-type: none;
 }
 
-.socials-icons > ul > li {
-  margin-right: 1em;
+.socials-icons > ul > li > a > i {
+  margin-right: 0.8em;
+}
+
+.fa-linkedin {
+  font-size: 2rem;
+}
+
+.fa-github {
+  font-size: 2rem;
+}
+
+.fa-github:hover {
+  color: #536dfe;
+}
+
+.fa-linkedin:hover {
+  color: #536dfe;
 }
 
 @media screen and (max-width: 1122px) {
@@ -572,6 +587,28 @@ footer {
 .project-skills > p {
   margin: 0.7em 0em;
   letter-spacing: 1.2px;
+}
+
+.redirect-to-blog {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.redirect-to-blog a {
+  color: #333;
+  border: 2px solid #333;
+  background: none;
+  padding: 1em 2em;
+  border-radius: 0.5em;
+  text-transform: uppercase;
+  font-weight: bolder;
+  transform: all 0.2s ease-in;
+}
+
+.redirect-to-blog a:hover {
+  background-color: #333;
+  color: #fff;
 }
 
 /* main {
