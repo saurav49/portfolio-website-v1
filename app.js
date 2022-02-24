@@ -117,23 +117,23 @@ btnColor.forEach((btn, i) => {
   });
 });
 
-// parentContainer.addEventListener("mousemove", (e) => {
-//   let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
-//   let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
-//   projectContainer.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
-//   console.log(projectContainer.style.transform);
-// });
+parentContainer.addEventListener("mousemove", (e) => {
+  let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+  let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+  projectContainer.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+  console.log(projectContainer.style.transform);
+});
 
-// // animate in
-// parentContainer.addEventListener("mouseenter", (e) => {
-//   projectContainer.style.transition = "none";
-// });
+// animate in
+parentContainer.addEventListener("mouseenter", (e) => {
+  projectContainer.style.transition = "none";
+});
 
-// // animate out
-// parentContainer.addEventListener("mouseleave", (e) => {
-//   projectContainer.style.transition = "0.5s all ease-in";
-//   projectContainer.style.transform = "rotateY(0deg) rotateX(0deg)";
-// });
+// animate out
+parentContainer.addEventListener("mouseleave", (e) => {
+  projectContainer.style.transition = "0.5s all ease-in";
+  projectContainer.style.transform = "rotateY(0deg) rotateX(0deg)";
+});
 
 // let texts = ['Web Developer', 'Problem Solver'];
 // let count = 0;
