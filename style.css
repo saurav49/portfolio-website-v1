@@ -1,13 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://rsms.me/inter/inter.css");
+html {
+  font-family: "Inter", sans-serif;
+}
+@supports (font-variation-settings: normal) {
+  html {
+    font-family: "Inter var", sans-serif;
+  }
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
-
   /* background: #000 !important;
   color: #0f0 !important;
   outline: solid #f00 1px !important; */
@@ -414,7 +419,14 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 2em;
+  /* margin-top: 2em; */
+}
+
+.blog-header {
+  height: 100vh;
+  background-color: #3d3d3d;
+  color: #fff;
+  padding: 0em 1em;
 }
 
 .project-header > p {
@@ -609,26 +621,26 @@ footer {
   letter-spacing: 1.2px;
 }
 
-.redirect-to-blog {
+.redirect-to-blog-btn {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.redirect-to-blog a {
-  color: #333;
-  border: 2px solid #333;
+.redirect-to-blog-btn a {
+  color: #fff;
+  border: 2px solid #fff;
   background: none;
   padding: 1em 2em;
   border-radius: 0.5em;
   text-transform: uppercase;
   font-weight: bolder;
-  transform: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
 }
 
-.redirect-to-blog a:hover {
-  background-color: #333;
-  color: #fff;
+.redirect-to-blog-btn a:hover {
+  background-color: #fff;
+  color: #3d3d3d;
 }
 
 /* main {
