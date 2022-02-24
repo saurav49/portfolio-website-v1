@@ -88,6 +88,11 @@
   }
 }
 
+body {
+  perspective: 1000px;
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   color: #fff;
@@ -448,8 +453,16 @@ footer {
   letter-spacing: 1.2px;
 }
 
+.project-image-parent {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .project-image {
-  width: 50%;
+  transform-style: preserve-3d;
+  width: 85%;
 }
 
 .project-image > img {
@@ -500,8 +513,15 @@ footer {
     margin: 0em;
   }
 
+  .project-image-parent {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .project-image {
-    width: 70%;
+    width: 80%;
     margin: 1em 0em 2em 0em;
   }
 

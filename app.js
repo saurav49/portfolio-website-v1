@@ -41,6 +41,100 @@ navItemsLink.forEach((nav) => {
   });
 });
 
+const parentContainer = document.querySelectorAll(".project-image-parent");
+const projectContainer = document.querySelectorAll(".project-image");
+
+// moving animation event
+parentContainer.forEach((parent, i) => {
+  parent.addEventListener("mousemove", (e) => {
+    let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+    let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+    if (i > 0) {
+      projectContainer[i].style.transform = `rotateY(${
+        xAxis / (1 * i)
+      }deg) rotateX(${yAxis / (1 * i)}deg)`;
+    } else {
+      projectContainer[
+        i
+      ].style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+    }
+  });
+});
+// animate in
+parentContainer.forEach((parent, i) => {
+  parent.addEventListener("mouseenter", (e) => {
+    projectContainer[i].style.transition = "none";
+  });
+});
+// animate out
+parentContainer.forEach((parent, i) => {
+  parent.addEventListener("mouseleave", (e) => {
+    projectContainer[i].style.transition = "0.5s all ease-in";
+    projectContainer[i].style.transform = "rotateY(0deg) rotateX(0deg)";
+  });
+});
+
+// animate live demo btn icon
+const eyeIcon = document.querySelectorAll(".fa-eye");
+const codeIcon = document.querySelectorAll(".fa-code");
+const btnOutline = document.querySelectorAll(".btn-color-outline");
+const btnColor = document.querySelectorAll(".btn-color");
+
+btnOutline.forEach((btn, i) => {
+  btn.addEventListener("mouseover", (e) => {
+    eyeIcon[i].style.transform = `translateY(-2px)`;
+  });
+});
+btnColor.forEach((btn, i) => {
+  btn.addEventListener("mouseover", (e) => {
+    codeIcon[i].style.transform = `translateY(-2px)`;
+  });
+});
+
+// animate in
+btnOutline.forEach((btn, i) => {
+  btn.addEventListener("mouseenter", (e) => {
+    eyeIcon[i].style.transition = "none";
+  });
+});
+btnColor.forEach((btn, i) => {
+  btn.addEventListener("mouseenter", (e) => {
+    codeIcon[i].style.transition = "none";
+  });
+});
+
+// animate out
+btnOutline.forEach((btn, i) => {
+  btn.addEventListener("mouseleave", (e) => {
+    eyeIcon[i].style.transition = "0.5s all ease-in";
+    eyeIcon[i].style.transform = "translateY(0px)";
+  });
+});
+btnColor.forEach((btn, i) => {
+  btn.addEventListener("mouseleave", (e) => {
+    codeIcon[i].style.transition = "0.5s all ease-in";
+    codeIcon[i].style.transform = "translateY(0px)";
+  });
+});
+
+// parentContainer.addEventListener("mousemove", (e) => {
+//   let xAxis = (window.innerWidth / 2 - e.pageX) / 25;
+//   let yAxis = (window.innerHeight / 2 - e.pageY) / 25;
+//   projectContainer.style.transform = `rotateY(${xAxis}deg) rotateX(${yAxis}deg)`;
+//   console.log(projectContainer.style.transform);
+// });
+
+// // animate in
+// parentContainer.addEventListener("mouseenter", (e) => {
+//   projectContainer.style.transition = "none";
+// });
+
+// // animate out
+// parentContainer.addEventListener("mouseleave", (e) => {
+//   projectContainer.style.transition = "0.5s all ease-in";
+//   projectContainer.style.transform = "rotateY(0deg) rotateX(0deg)";
+// });
+
 // let texts = ['Web Developer', 'Problem Solver'];
 // let count = 0;
 // let index = 0;
